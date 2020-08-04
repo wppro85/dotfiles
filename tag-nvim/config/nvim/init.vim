@@ -1,5 +1,6 @@
 call plug#begin()
 
+Plug 'mhinz/vim-startify'
 " themes ============================================
 Plug 'ajmwagar/vim-deus'
 Plug 'crusoexia/vim-monokai'
