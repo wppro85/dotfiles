@@ -1,0 +1,2 @@
+TAGS="rcm tmux pip fish yabai vim"
+EXCLUDES="README.md commands.md"
