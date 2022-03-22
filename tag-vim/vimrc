@@ -43,7 +43,7 @@ set directory=/tmp
 
 
 "Theme
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme darkblue
 
 

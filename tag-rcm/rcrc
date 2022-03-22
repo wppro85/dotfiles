@@ -1,2 +1,2 @@
-TAGS="rcm tmux pip fish yabai vim"
+TAGS="rcm tmux pip fish yabai vim alacritty"
 EXCLUDES="README.md commands.md"
