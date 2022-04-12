@@ -14,11 +14,11 @@ alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
-alias tc='tmux attach -t '
+alias tc='tmux -u attach -t '
 alias tkill='pkill -f tmux'
-alias tl='tmux ls'
-alias tn='tmux new -s '
-alias treload='tmux source-file ~/.tmux.conf '
+alias tl='tmux -u ls'
+alias tn='tmux -u new -s '
+alias treload='tmux -u source-file ~/.tmux.conf '
 alias g git
 alias spo='export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
 alias vimconfig='vim ~/.vimrc'

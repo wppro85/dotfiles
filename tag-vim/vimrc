@@ -1,3 +1,4 @@
+"
 "Vim Plugin
 call plug#begin('~/.vim/pluged')
 Plug 'morhetz/gruvbox'
@@ -14,12 +15,18 @@ Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 
+"Theme
+syntax on
+set background=dark
+colorscheme gruvbox
+"colorscheme darkblue
+
 "Map
-let mapleader = ","
+let mapleader = "\<space>"
 let maplocalleader="_"
 nnoremap <TAB> :tabnext<CR>
-nnoremap <leader>tb :NERDTreeToggle<CR>
-nnoremap <leader>tf :NERDTreeFind<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>ef :NERDTreeFind<CR>
 nnoremap <F1> :b#<cr>
 let g:ctrlp_map = '<leader><leader>'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
@@ -42,9 +49,6 @@ set backupdir=~/.vimbackup
 set directory=/tmp
 
 
-"Theme
-"colorscheme gruvbox
-"colorscheme darkblue
 
 
 "automcd
@@ -78,7 +82,7 @@ inoremap ' ''<ESC>i
 
 "jedi-vim
 "let g:jedi#auto_initialization = 0
-""let g:jedi#environment_path = "/usr/local/Caskroom/miniforge/base/bin/python3"
+"let g:jedi#environment_path = "/usr/local/Caskroom/miniforge/base/bin/python3"
 
 "let g:jedi#auto_vim_configuration = 0
 "let g:jedi#environment_path = "base"
