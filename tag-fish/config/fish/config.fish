@@ -14,7 +14,7 @@ alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
-alias tc='tmux -u attach -t '
+alias ta='tmux -u attach -t '
 alias tkill='pkill -f tmux'
 alias tl='tmux -u ls'
 alias tn='tmux -u new -s '

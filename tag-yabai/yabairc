@@ -71,5 +71,5 @@ yabai -m rule --add label=vscode app="^Code$" space=2
 # yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off border=off
 
 # 临时性的App 也就是manage=off不受到yabai平铺式的限制，之前怎么弹出来就怎么弹出来
-otherApp='^(IINA|访达|备忘录|Calendar|网易云音乐|日历|System Preferences|系统偏好设置|1Password 7|Mail|微信|WeChatc|QQ)$'
+otherApp='^(IINA|访达|Calendar|网易云音乐|日历|System Preferences|系统偏好设置|1Password 7|Mail|QQ)$'
 yabai -m rule --add app="${otherApp}" manage=off

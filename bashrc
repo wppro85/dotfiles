@@ -9,4 +9,3 @@ export GITHUB_HEXO_TOKEN="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"
 
 # Fig post block. Keep at the bottom of this file.
 eval "$(fig init bash post)"
-
