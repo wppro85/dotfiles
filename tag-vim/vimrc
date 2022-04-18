@@ -28,10 +28,13 @@ nnoremap <TAB> :tabnext<CR>
 nnoremap <leader>e :NERDTreeToggle<CR>
 nnoremap <leader>ef :NERDTreeFind<CR>
 nnoremap <F1> :b#<cr>
+" Press <c-f> and <c-b> to cycle between modes.
 let g:ctrlp_map = '<leader><leader>'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 "Set
+let g:C_Ctrl_j = 'off'
+let g:C_Ctrl_k = 'off'
 filetype plugin indent on
 set autoindent
 set tabstop=2
@@ -47,6 +50,10 @@ set exrc
 set secure
 set backupdir=~/.vimbackup
 set directory=/tmp
+set undofile
+set history=1000
+set ttimeout ttimeoutlen=10
+
 
 
 

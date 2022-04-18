@@ -22,13 +22,13 @@ yabai -m config layout                      bsp
 
 # bar settings
 
-#yabai -m config top_padding                 "${gaps_top}"
+yabai -m config top_padding                 "${gaps_top}"
 yabai -m config bottom_padding              "${gaps_bottom}"
 yabai -m config left_padding                "${gaps_left}"
 yabai -m config right_padding               "${gaps_right}"
 yabai -m config window_gap                  "${gaps_inner}"
 
-yabai -m config mouse_follows_focus         off
+yabai -m config mouse_follows_focus         on
 yabai -m config focus_follows_mouse         off
 
 yabai -m config mouse_modifier              fn
@@ -54,15 +54,18 @@ yabai -m config active_window_border_color   0xff775759
 # ====== List of rules =========================
 
 
-yabai -m rule --add label=safari app="^Safari$" space=1
-yabai -m rule --add label=iTerm2 app="^iTerm$" space=1
+yabai -m rule --add label=tianyi app="^天翼云桌面（通用版）$" space=1
 
-#yabai -m rule --add label=chrome app="^Google Chrome$" space=2
+yabai -m rule --add label=chrome app="^Google Chrome$" space=2
+yabai -m rule --add label=sidekick app="^Sidekick$" space=2
 yabai -m rule --add label=vscode app="^Code$" space=2
+yabai -m rule --add label=iTerm2 app="^iTerm$" space=2
+#yabai -m rule --add label=alacritty app="^Alacritty$" space=2
+yabai -m rule --add label=wechat app="^ 微信 $" space=2
+yabai -m rule --add label=remainder app="^ 备忘录 $" space=2
+#yabai -m rule --add label=qq app="^ qq$" space=3
 
-#yabai -m rule --add label=wechat app="^ 微信 $" space=3
-#yabai -m rule --add label=qq app="^ 微信" space=3
-
+yabai -m rule --add label=safari app="^Safari$" space=4
 #yabai -m rule --add label=musicapp app="^Music$" space=4
 #yabai -m rule --add label=musicapp app="网易云音乐" space=3
 
@@ -71,5 +74,5 @@ yabai -m rule --add label=vscode app="^Code$" space=2
 # yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off border=off
 
 # 临时性的App 也就是manage=off不受到yabai平铺式的限制，之前怎么弹出来就怎么弹出来
-otherApp='^(IINA|访达|Calendar|网易云音乐|日历|System Preferences|系统偏好设置|1Password 7|Mail|QQ)$'
+otherApp='^(IINA|访达|Calendar|网易云音乐|日历|System Preferences|系统偏好设置|QQ)$'
 yabai -m rule --add app="${otherApp}" manage=off
